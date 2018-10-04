@@ -1,0 +1,110 @@
+1)
+
+public class pattern {
+ 
+    public static void main(String[] args) {
+        for (int i = 8; i >= 1; i--) {
+            for (int j = 1; j <= row; j++) {
+                System.out.print("*");
+            }
+ 
+            System.out.println();
+        }
+    }
+}
+************************************************************
+
+2)
+
+import java.util.*;
+
+public class Even{
+
+	public static void main(String []args)
+    {
+		int n=0,i=0;
+		
+		Scanner X = new Scanner(System.in);
+		
+		System.out.print("Enter value n : ");
+		n = X.nextInt();
+		
+		for(i=1; i<n; i++)
+		{
+			if(i%2==0)
+				System.out.print(i+" ");
+		}	
+		System.out.println();
+		
+	}
+}
+******************************************************************
+3)
+
+    class Armstrong{  
+      public static void main(String[] args)  {  
+        int c=0,a,temp;  
+        int n=153;//It is the number to check armstrong  
+        temp=n;  
+        while(n>0)  
+        {  
+        a=n%10;  
+        n=n/10;  
+        c=c+(a*a*a);  
+        }  
+        if(temp==c)  
+        System.out.println("armstrong number");   
+        else  
+            System.out.println("Not armstrong number");   
+       }  
+    } 
+******************************************************************
+5)
+
+
+import java.util.Scanner;
+ 
+class ReverseNumber
+{
+   public static void main(String args[])
+   {
+      int n, reverse = 0;
+ 
+      System.out.println("Enter a number to reverse");
+      Scanner in = new Scanner(System.in);
+      n = in.nextInt();
+ 
+      while(n != 0)
+      {
+          reverse = reverse * 10;
+          reverse = reverse + n%10;
+          n = n/10;
+      }
+ 
+      System.out.println("Reverse of the number is " + reverse);
+   }
+}
+*****************************************************************
+
+7)
+public class Contains {
+
+    public static void main(String[] args) {
+        int[] num = {1,4,6,7,8,9,10};
+        int toFind = 3;
+        boolean found = false;
+
+        for (int n : num) {
+            if (n == toFind) {
+                found = true;
+                break;
+            }
+        }
+
+        if(found)
+            System.out.println(toFind + " is found.");
+        else
+            System.out.println(toFind + " is not found.");
+    }
+}
+ 
